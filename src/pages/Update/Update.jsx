@@ -8,7 +8,7 @@ import Spinner from "../../components/Spinner";
 import { toast } from "react-toastify";
 
 const cloud_name = import.meta.env.VITE_CLOUD_NAME;
-const upload_preset = import.meta.env.VITE_UPLOAD_PRESET;
+const upload_preset = "melodify";
 
 const Update = () => {
   useRedirectLoggedOutUser("/login");
