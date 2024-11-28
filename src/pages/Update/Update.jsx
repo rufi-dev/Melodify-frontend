@@ -77,7 +77,7 @@ const Update = () => {
 
         // Save image to cloudinary
         console.log(userImage)
-        console.log(cloud_name)
+        console.log(upload_preset)
         const response = await fetch(
           `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`,
           { method: "post", body: image }
