@@ -82,7 +82,7 @@ const Update = () => {
           `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`,
           { method: "post", body: image }
         );
-
+        console.log(await response.json())
         const imgData = await response.json();
         imageUrl = imgData.url.toString();
       }
