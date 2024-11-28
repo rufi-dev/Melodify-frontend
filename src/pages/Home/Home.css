@@ -1,0 +1,133 @@
+/* General Layout */
+.spotify-clone {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-list li {
+    margin: 15px 0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    overflow-y: auto; /* Enables scrolling for the main content */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #282828;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.install-button {
+    background-color: #1db954;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.categories {
+    display: flex;
+    padding: 20px;
+}
+
+.category-tab {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #b3b3b3;
+}
+
+.category-tab.active {
+    color: #fff;
+}
+
+.playlists {
+    padding: 20px;
+}
+
+.playlist-item {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.playlist-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.playlist-item div {
+    margin-top: 7px;
+    line-height: 25px;
+    color: #b3b3b3;
+}
+
+.playlist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.now-playing {
+    display: flex;
+    align-items: center;
+}
+
+.now-playing img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.now-playing div {
+    margin-left: 10px;
+}
+
+.player-controls {
+    display: flex;
+}
+
+.play-button {
+    background-color: #1db954;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}

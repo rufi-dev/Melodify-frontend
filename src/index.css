@@ -1,0 +1,36 @@
+/* Full Page Background */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inria Sans", sans-serif;
+  background: radial-gradient(circle at center, #005700, #000000 70%);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px; /* For horizontal scrollbars (if needed) */
+  background-color: #101d11; /* Background color similar to your design */
+  border-radius: 10px; /* Rounded corners */
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1db954;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+
+::-webkit-scrollbar-track {
+  overflow-y: auto;
+  border-radius: 10px;
+  opacity: 0.5;
+
+}

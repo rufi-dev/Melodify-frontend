@@ -1,0 +1,184 @@
+/* Center form */
+#form-ui {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Prevent scroll in the form area */
+}
+
+/* Box-sizing for consistent width and padding calculation */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+#form-body {
+    width: 420px;
+    height: auto;
+    padding: 25px;
+    background-color: #161616;
+    box-shadow: 0px 15px 60px #00FF7F;
+    outline: 1px solid #2b9962;
+    border-radius: 10px;
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+/* Smooth transitions for sliding in/out */
+.inactive-form-login {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+}
+
+.active-form-login {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+}
+
+.inactive-form-signup {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+}
+
+.active-form-signup {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+}
+
+/* Welcome lines styling */
+#welcome-lines {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#welcome-line-1 {
+    color: #00FF7F;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#welcome-line-2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 17px;
+}
+
+/* Input area */
+#input-area {
+    margin-top: 20px;
+}
+
+/* Input field styling */
+.form-inp {
+    padding: 1px 15px;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+    line-height: 1;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form-inp input {
+    width: 100%;
+    background: none;
+    font-size: 14px;
+    color: #00FF7F;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+}
+
+.form-inp input:focus {
+    outline: none;
+}
+
+/* Submit button styling */
+#submit-button-cvr {
+    margin-top: 20px;
+}
+
+#submit-button {
+    /* display: block; */
+    width: 100%;
+    color: #00FF7F;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 13px 12px 13px;
+    border: 1px solid #00FF7F;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #00FF7F;
+    color: #161616;
+}
+
+/* Sign-up and forgot password links */
+#forgot-pass, #sign-up {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#forgot-pass a, #sign-up a {
+    color: #868686;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#sign-up span {
+    color: #868686;
+    font-size: 12px;
+}
+
+#sign-up a {
+    color: #00FF7F;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Google Button Styling */
+button.google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    color: #00FF7F;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 13px 12px 13px;
+    border: 1px solid #00FF7F;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    margin-top: 20px;
+    box-shadow: 0px 3px 7px #00FF7F;
+}
+
+button.google:hover {
+    background-color: #00FF7F;
+    color: #161616;
+}
+
+button.google svg {
+    margin-right: 20px;
+}
+
+/* Adjust the button for responsiveness */
+button.google svg {
+    width: 20px;
+    height: 20px;
+}

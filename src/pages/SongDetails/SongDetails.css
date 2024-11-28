@@ -1,0 +1,141 @@
+/* Background */
+body {
+    background-image: url("https://images.hdqwalls.com/download/windows-11-blue-material-3y-2560x1440.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fixed container overlay */
+.fixed {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+/* Container for song details and lyrics */
+.bg-white {
+    background-color: rgba(0, 0, 0, 0.65); /* Slight transparent black */
+    padding: 50px;
+    border-radius: 15px;
+    width: 200px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    color: white;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 8px; /* For horizontal scrollbars (if needed) */
+    background-color: #101d11; /* Background color similar to your design */
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+/* Image section */
+.navigation-image {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+    margin-bottom: 20px;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+/* Lyrics section */
+.lyrics-section {
+    color: white;
+    font-size: 16px; /* Increased font size */
+    line-height: 1.6;
+    max-height: 200px; /* Increased height */
+    overflow-y: auto;
+}
+
+/* Song play section */
+.play .container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.songName {
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 14px; /* Increased font size */
+    margin-bottom: 5px;
+    display: block;
+}
+
+.play .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; /* Increased font size */
+    color: lightgray;
+}
+
+/* Progress bar styling */
+.play .container div span {
+    flex-grow: 1;
+    height: 5px; /* Slightly taller progress bar */
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 25px;
+    position: relative;
+}
+
+.play .container div span::after {
+    content: '';
+    width: 60%;
+    height: 100%;
+    background-color: #1ed760;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Control buttons styling */
+.controls svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    margin: 15px 6px;
+    cursor: pointer;
+    transition: fill 0.3s, background-color 0.3s; /* Smooth transition for fill and background */
+}
+
+/* Hover state for all buttons */
+.controls svg:hover {
+    fill: #1ed760;
+}
