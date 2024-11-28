@@ -8,7 +8,7 @@ import Spinner from "../../components/Spinner";
 import { toast } from "react-toastify";
 
 const cloud_name = import.meta.env.VITE_CLOUD_NAME;
-const upload_preset = "melodify";
+const upload_preset = import.meta.env.VITE_UPLOAD_PRESET;
 
 const Update = () => {
   useRedirectLoggedOutUser("/login");
@@ -73,7 +73,7 @@ const Update = () => {
         const image = new FormData();
         image.append("file", userImage);
         image.append("cloud_name", cloud_name);
-        image.append("upload_preset", upload_preset);
+        image.append("upload_preset", "melodify");
 
         // Save image to cloudinary
         console.log(userImage)
