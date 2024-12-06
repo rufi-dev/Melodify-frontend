@@ -73,14 +73,15 @@ const Update = () => {
         const image = new FormData();
         image.append("file", userImage);
         image.append("cloud_name", cloud_name);
-        image.append("upload_preset", upload_preset);
+        image.append("upload_preset", "melodify");
 
         // Save image to cloudinary
+        console.log(userImage)
+        console.log(upload_preset)
         const response = await fetch(
           `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`,
           { method: "post", body: image }
         );
-
         const imgData = await response.json();
         imageUrl = imgData.url.toString();
       }
